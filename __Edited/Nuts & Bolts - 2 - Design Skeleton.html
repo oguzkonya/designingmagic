@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Nuts &amp; Bolts: Design Skeleton</title>
+  <link rel="shortcut icon" href="https://magic.wizards.com/sites/all/themes/wiz_mtg/icons/touch-icon-16.png">
+</head>
+
+<body>
+  <h1>Nuts &amp; Bolts: Design Skeleton</h1>
+
+  <p>Let's begin by answering the first question: what
+    exactly is a design skeleton? The simplest metaphor I can think of is a
+    blueprint. Before builders can come in and build a house, the architect
+    has to map out what exactly he wants in the house. A design skeleton is a
+    preliminary blueprint that helps the designer map out what he or she
+    needs to have in the set. Today, I am going to build a design skeleton
+    for an imaginary small set to show you how it is done. I am going to
+    call my small set <i>Justice</i> as it is part of the <i>Truth</i>, <i>Justice,</i> and <i>The American
+      Way</i>
+    block (note&mdash;not actually a block, I'm making this up). Also, to keep
+    things simple, I am just going to make the design skeleton for the
+    common cards in the set. In a real design, the uncommons, rares, and
+    mythic rares would also be added.</p>
+
+  <p>A key part of design skeletons are card codes. Let's begin by
+    laying down the card codes for <i>Justice</i>'s commons. I'm going to assume <i>Justice </i>has a common
+    cycle of lands and five common artifacts. With this info, here's how the card codes lay out:</p>
+
+  <pre> CW01 &mdash; 
+ CW02 &mdash; 
+ CW03 &mdash; 
+ CW04 &mdash; 
+ CW05 &mdash; 
+ CW06 &mdash; 
+ CW07 &mdash; 
+ CW08 &mdash; 
+ CW09 &mdash; 
+ CW10 &mdash; 
+ CU01 &mdash; 
+ CU02 &mdash; 
+ CU03 &mdash; 
+ CU04 &mdash; 
+ CU05 &mdash; 
+ CU06 &mdash; 
+ CU07 &mdash; 
+ CU08 &mdash; 
+ CU09 &mdash; 
+ CU10 &mdash; 
+ CB01 &mdash; 
+ CB02 &mdash; 
+ CB03 &mdash; 
+ CB04 &mdash; 
+ CB05 &mdash; 
+ CB06 &mdash; 
+ CB07 &mdash; 
+ CB08 &mdash; 
+ CB09 &mdash; 
+ CB10 &mdash; 
+ CR01 &mdash; 
+ CR02 &mdash; 
+ CR03 &mdash; 
+ CR04 &mdash; 
+ CR05 &mdash; 
+ CR06 &mdash; 
+ CR07 &mdash; 
+ CR08 &mdash; 
+ CR09 &mdash; 
+ CR10 &mdash; 
+ CG01 &mdash; 
+ CG02 &mdash; 
+ CG03 &mdash; 
+ CG04 &mdash; 
+ CG05 &mdash; 
+ CG06 &mdash; 
+ CG07 &mdash; 
+ CG08 &mdash; 
+ CG09 &mdash; 
+ CG10 &mdash; 
+ CA01 &mdash; 
+ CA02 &mdash; 
+ CA03 &mdash; 
+ CA04 &mdash; 
+ CA05 &mdash; 
+ CL01 &mdash; 
+ CL02 &mdash; 
+ CL03 &mdash; 
+ CL04 &mdash; 
+ CL05 &mdash; </pre>
+
+
+
+  <p>The first thing we need to do is to figure out how many creatures we
+    want. To do this we need to walk through what we know about the set:</p>
+
+  <h3>#1 &mdash; The Set Is Going To Have Around 50% Creatures</h3>
+
+  <p>The percentage of creatures tends to ebb and flow. R&amp;D's current
+    philosophy is that Limited is more fun if you more often have to stretch
+    a little bit for your last few cards rather than cut cards that you
+    know are strong. At its core, <b>Magic</b> is about discovery so we've
+    brought that philosophy to Limited where we want to force players to
+    have to try out cards they might not have played before. Anyway, this
+    means that of the 60 commons, only 30 are going to be creatures.</p>
+
+  <h3>#2 &mdash; Colors Follow Their Normal Creature Distribution</h3>
+
+  <p>As a default, here is what colors have the greatest percentage of creatures from most to least:</p>
+
+  <p><b>White &mdash;</b> For a long time, green was the color that got the most
+    creatures but a year or so back we spent some time trying to
+    differentiate between white and green and came to the realization that
+    it was silly for green to be the color that got the most <i>and</i> the
+    biggest creatures at common. White is the "army color" so we decided it
+    would make sense for white to get the largest number of creatures and
+    leave green the largest creatures at common. White beats you with
+    numbers while green beats you with size.</p>
+
+  <p><b>Green &mdash;</b> While green isn't #1 anymore, it still is the "creature color" and thus gets the #2 slot.</p>
+
+  <p><b>Black &mdash;</b> Black has become the color that tends to balance creatures and spells and thus sits in
+    the middle.</p>
+
+  <p><b>Red &mdash;</b> Blue and red are the two spell colors, meaning that they
+    tend to have the most spells of the five colors. Red, though, has more
+    creature needs than blue and thus is #4.</p>
+
+  <p><b>Blue &mdash;</b> Some color has to have the fewest creatures. Why not the color most tied to spells?</p>
+
+  <p><b>Artifacts &mdash;</b> From time to time a theme may bring artifacts from
+    the bottom higher up (in artifact-themed blocks, it's often #1) but
+    most of the time it only has zero to two artifact creatures at common.</p>
+
+  <p>To figure out what each color gets, let's do the math. We have thirty
+    slots and we want the colors to go in the order we set. With 30
+    creatures, that averages out to 6 per color. Black is the average color
+    so lets start by giving it 6. Now let's go up and down one for green and
+    red respectively giving green 7 creatures and red 5. Then let's go up
+    and down one more for white and blue giving white 8 and blue 4. Now we
+    have to figure out whether or not we want an artifact creature. I'd like
+    to have one but to do so means stealing one from a color. I'll steal
+    one from white but to keep white up, I'm going to add a token making
+    instant/sorcery to white. This is my way of staying at 50% while giving
+    white a little something to keep it the "army-making" color.</p>
+
+  <p>Here's what this all looks like in the skeleton: (remember that R&amp;D likes to put creatures first in
+    the card codes)</p>
+
+  <pre> CW01 &mdash; creature 
+ CW02 &mdash; creature 
+ CW03 &mdash; creature 
+ CW04 &mdash; creature 
+ CW05 &mdash; creature 
+ CW06 &mdash; creature 
+ CW07 &mdash; creature 
+ CW08 &mdash; instant/sorcery &mdash; token making 
+ CW09 &mdash; 
+ CW10 &mdash; 
+ CU01 &mdash; creature 
+ CU02 &mdash; creature 
+ CU03 &mdash; creature 
+ CU04 &mdash; creature 
+ CU05 &mdash; 
+ CU06 &mdash; 
+ CU07 &mdash; 
+ CU08 &mdash; 
+ CU09 &mdash; 
+ CU10 &mdash; 
+ CB01 &mdash; creature 
+ CB02 &mdash; creature 
+ CB03 &mdash; creature 
+ CB04 &mdash; creature 
+ CB05 &mdash; creature 
+ CB06 &mdash; creature 
+ CB07 &mdash; 
+ CB08 &mdash; 
+ CB09 &mdash; 
+ CB10 &mdash; 
+ CR01 &mdash; creature 
+ CR02 &mdash; creature 
+ CR03 &mdash; creature 
+ CR04 &mdash; creature 
+ CR05 &mdash; creature 
+ CR06 &mdash; 
+ CR07 &mdash; 
+ CR08 &mdash; 
+ CR09 &mdash; 
+ CR10 &mdash; 
+ CG01 &mdash; creature 
+ CG02 &mdash; creature 
+ CG03 &mdash; creature 
+ CG04 &mdash; creature 
+ CG05 &mdash; creature 
+ CG06 &mdash; creature 
+ CG07 &mdash; creature 
+ CG08 &mdash; 
+ CG09 &mdash; 
+ CG10 &mdash; 
+ CA01 &mdash; creature 
+ CA02 &mdash; 
+ CA03 &mdash; 
+ CA04 &mdash; 
+ CA05 &mdash; 
+ CL01 &mdash; 
+ CL02 &mdash; 
+ CL03 &mdash; 
+ CL04 &mdash; 
+ CL05 &mdash; </pre>
+
+
+
+  <p>Just knowing they are creatures isn't enough. Next we want to figure
+    two things. First, I like to make sure that we keep an eye out for the
+    evergreen creature keywords. Second, the lead designer needs a sense of
+    how big they are. For the skeleton, we tend to use three sizes: small,
+    medium and large. Small means anything from a 0/1 up to about a 2/3.
+    Medium is a 3/3 up to about a 4/5. Large is 5/5 or larger. Let's look at
+    each color:</p>
+
+  <h3>White</h3>
+
+  <p><b>Keywords &mdash;</b> White gets the following at common: flying, first strike, vigilance and sometimes
+    flash, protection or lifelink.</p>
+
+  <p><b>Size &mdash;</b> Almost all of white's creatures are small. For Limited
+    purposes, we've started giving white more medium creatures. Still, the
+    majority of white should be small.</p>
+
+  <h3><b>Blue</b></h3>
+
+  <p><b>Keywords &mdash;</b> Blue gets flying and shroud, and sometimes islandwalk or flash.</p>
+
+  <p><b>Size &mdash;</b> Blue usually has all small creatures with one medium and sometimes one large. The large is
+    usually a serpent-like thing.</p>
+
+  <h3><b>Black</b></h3>
+
+  <p><b>Keywords &mdash;</b> Black gets the following at common: flying, deathtouch, intimidate, and sometimes
+    haste, lifelink, regeneration or swampwalk.</p>
+
+  <p><b>Size &mdash;</b> Black gets a mix of small and medium creatures but never large (well, barring some quirky
+    block theme).</p>
+
+  <h3><b>Red</b></h3>
+
+  <p><b>Keywords &mdash;</b> Red gets the following at common: haste, first strike, trample, and sometimes
+    intimidate or mountainwalk. <a>Firebreathing</a> isn't technically a keyword, but it shows up in almost
+    every set.</p>
+
+  <p><b>Size &mdash;</b> Red, like black, has a mix of small and medium
+    creatures. Every once in a while red will have a large creature but most
+    often at the small end of the large spectrum.</p>
+
+  <h3><b>Green</b></h3>
+
+  <p><b>Keywords &mdash;</b> Green gets the following at common: trample,
+    deathtouch, regeneration, and sometimes flash, forestwalk, reach,
+    shroud, or vigilance.</p>
+
+  <p><b>Size &mdash;</b> Green has a mix of small and medium creatures and always at least one large (sometimes
+    two).</p>
+
+  <p>Lets take all this information and put it into the mix. Note that I'm
+    making rough estimations on what size certain keywords will go. The
+    design is not locked down to what I put. If, for instance, I need to
+    move vigilance from a medium creature to a small I can. Here's what the
+    skeleton looks like now:</p>
+
+  <pre> CW01 &mdash; creature, small 
+ CW02 &mdash; creature, small, flying 
+ CW03 &mdash; creature, small, first strike 
+ CW04 &mdash; creature, small 
+ CW05 &mdash; creature, small 
+ CW06 &mdash; creature, medium, vigilance 
+ CW07 &mdash; creature, medium, flying 
+ CW08 &mdash; instant/sorcery &mdash; token making, flying 
+ CW09 &mdash; 
+ CW10 &mdash; 
+ CU01 &mdash; creature, small, flying 
+ CU02 &mdash; creature, small, shroud 
+ CU03 &mdash; creature, medium, flying 
+ CU04 &mdash; creature, large 
+ CU05 &mdash; 
+ CU06 &mdash; 
+ CU07 &mdash; 
+ CU08 &mdash; 
+ CU09 &mdash; 
+ CU10 &mdash; 
+ CB01 &mdash; creature, small 
+ CB02 &mdash; creature, small, flying 
+ CB03 &mdash; creature, small, deathtouch 
+ CB04 &mdash; creature, medium, intimidate 
+ CB05 &mdash; creature, medium 
+ CB06 &mdash; creature, medium 
+ CB07 &mdash; 
+ CB08 &mdash; 
+ CB09 &mdash; 
+ CB10 &mdash; 
+ CR01 &mdash; creature, small 
+ CR02 &mdash; creature, small, first strike 
+ CR03 &mdash; creature, small 
+ CR04 &mdash; creature, medium, haste 
+ CR05 &mdash; creature, medium, trample 
+ CR06 &mdash; 
+ CR07 &mdash; 
+ CR08 &mdash; 
+ CR09 &mdash; 
+ CR10 &mdash; 
+ CG01 &mdash; creature, small 
+ CG02 &mdash; creature, small, regeneration 
+ CG03 &mdash; creature, small, deathtouch 
+ CG04 &mdash; creature, medium, reach 
+ CG05 &mdash; creature, medium 
+ CG06 &mdash; creature, medium 
+ CG07 &mdash; creature, large, trample 
+ CG08 &mdash; 
+ CG09 &mdash; 
+ CG10 &mdash; 
+ CA01 &mdash; creature, medium 
+ CA02 &mdash; 
+ CA03 &mdash; 
+ CA04 &mdash; 
+ CA05 &mdash; 
+ CL01 &mdash; 
+ CL02 &mdash; 
+ CL03 &mdash; 
+ CL04 &mdash; 
+ CL05 &mdash; </pre>
+
+
+
+  <p>Now that the creatures are mapped out, let's turn our attention to the other card types.</p>
+
+  <p><b>Artifacts &mdash;</b> Obviously, I already assigned five at common. Odds
+    are these are going to be simple utility cards. Without Esper-like
+    oddness, artifacts don't show up in colors.</p>
+
+  <p><b>Enchantments &mdash;</b> As a general rule the only enchantments we tend
+    to do at common are auras. Block themes can tweak that, but without a
+    reason you will not see global enchantments (this is an old term but I
+    don't know of one that's replaced it so I'm still using it) at common.
+    Most colors will have at least one aura, with white and green sometimes
+    having more than one.</p>
+
+  <p><b>Instants &mdash;</b> All five colors get instants but white and blue tend to have more proportionally than
+    the rest.</p>
+
+  <p><b>Lands &mdash;</b> Like artifacts, lands have been assigned their own common slots and don't show up in
+    colors.</p>
+
+  <p><b>Planeswalkers &mdash;</b> For some odd reason we don't tend to do this card type at common.</p>
+
+  <p><b>Sorceries &mdash;</b> All five colors get sorceries but black and green tend to have more proportionally
+    than the rest.</p>
+
+  <p><b>Tribal &mdash;</b> Tribal is the only card type that we don't use every
+    block. I keep getting letters about how a specific spell wants to, based
+    on flavor, have tribal. The answer is that we only use tribal when it
+    is a major component in the block.</p>
+
+  <p>Let's layer this in:</p>
+
+  <pre> CW01 &mdash; creature, small 
+ CW02 &mdash; creature, small, flying 
+ CW03 &mdash; creature, small, first strike 
+ CW04 &mdash; creature, small, flash 
+ CW05 &mdash; creature, medium, vigilance 
+ CW06 &mdash; creature, medium, flying 
+ CW07 &mdash; sorcery &mdash; token making, flying 
+ CW08 &mdash; instant 
+ CW09 &mdash; instant 
+ CW10 &mdash; enchantment, aura 
+ CU01 &mdash; creature, small, flying 
+ CU02 &mdash; creature, small, shroud 
+ CU03 &mdash; creature, medium, flying 
+ CU04 &mdash; creature, large 
+ CU05 &mdash; instant 
+ CU06 &mdash; instant 
+ CU07 &mdash; instant 
+ CU08 &mdash; sorcery 
+ CU09 &mdash; sorcery 
+ CU10 &mdash; enchantment, aura 
+ CB01 &mdash; creature, small 
+ CB02 &mdash; creature, small, flying 
+ CB03 &mdash; creature, small, deathtouch 
+ CB04 &mdash; creature, medium, intimidate 
+ CB05 &mdash; creature, medium 
+ CB06 &mdash; creature, medium 
+ CB07 &mdash; instant 
+ CB08 &mdash; sorcery 
+ CB09 &mdash; sorcery 
+ CB10 &mdash; enchantment, aura 
+ CR01 &mdash; creature, small 
+ CR02 &mdash; creature, small, first strike 
+ CR03 &mdash; creature, small 
+ CR04 &mdash; creature, medium, haste 
+ CR05 &mdash; creature, medium, trample 
+ CR06 &mdash; instant 
+ CR07 &mdash; instant 
+ CR08 &mdash; instant 
+ CR09 &mdash; sorcery 
+ CR10 &mdash; enchantment, aura 
+ CG01 &mdash; creature, small 
+ CG02 &mdash; creature, small, regeneration 
+ CG03 &mdash; creature, small, deathtouch 
+ CG04 &mdash; creature, medium, reach 
+ CG05 &mdash; creature, medium 
+ CG06 &mdash; creature, medium 
+ CG07 &mdash; creature, large, trample 
+ CG08 &mdash; instant 
+ CG09 &mdash; sorcery 
+ CG10 &mdash; enchantment, aura 
+ CA01 &mdash; creature, medium 
+ CA02 &mdash; sac effect 
+ CA03 &mdash; tap ability 
+ CA04 &mdash; equipment 
+ CA05 &mdash; equipment 
+ CL01 &mdash; produces W 
+ CL02 &mdash; produces U 
+ CL03 &mdash; produces B 
+ CL04 &mdash; produces R 
+ CL05 &mdash; produces G</pre>
+
+
+
+  <p>Notice how I made some changes to the skeleton as I was adding in new
+    things. The best example is in white. I realized that I was a little
+    tight so I did a few things. First, I removed a creature because it
+    became clear that with ten slots pulled out for artifacts and land white
+    couldn't hold eight creatures. As I wanted enough space for instants to
+    give white the combat tricks it likes, I chose to make the token-making
+    spell a sorcery. I then added flash to one of the white creatures
+    because even with two instants I knew I needed to have a little more
+    surprise for white.</p>
+
+  <p>This demonstrates the point of the skeleton. The skeleton isn't there
+    to lock the designer in but to make the designer aware of what things
+    they need to allocate. When something isn't working, the designer then
+    has to re-jigger the skeleton to get what they need.</p>
+
+  <p>Notice also that I also made some determination of what kind of
+    artifacts I wanted and pointed out that the land was a cycle by
+    stressing the colors.</p>
+
+  <p>Next, I have to weave in whatever the set is about. Let's suppose that the <i>Truth</i>, <i>Justice,</i>
+    and <i>the American Way</i> block is about the graveyard. <i>Truth</i>
+    created a graveyard-based mechanic (I'm calling it gravetwist; once
+    again completely made up for this article) that went on permanents and
+    spells. It's something that can be grafted onto any type of spell so I
+    can pair it with different effects. To do this, while I'm weaving the
+    block mechanic in, I'm also going to weave in what I call the basic
+    effects. Let's run through these quickly. These are effects that pretty
+    much show up in every set in common in a particular color:</p>
+
+  <p><b>White &mdash;</b> White always has some kind of lifegain, enchantment removal, and creature removal (which
+    can include <a>Pacifism</a>-like
+    effects), and some combat trick (small power/toughness boosting and
+    ability granting are common ones). It often has team boosting ("all your
+    creatures get +1/+1" until end of turn) and damage
+    prevention/redirection.</p>
+
+  <p><b>Blue &mdash;</b> Blue always has a counterspell (often two, one hard,
+    one soft), "bounce" ("return BLAH to its owner's hand"), card drawing,
+    creature-control enchantment (most often locking it down), and sometimes
+    has a card sifting, shrinking ("target creature gets &mdash;N/-0 until end of
+    turn"), or twiddling ("tap or untap target BLAH").</p>
+
+  <p><b>Black &mdash;</b> Black always has multiple creature kill (usually
+    "destroy target nonBLAH creature" and "target creature gets &mdash;N/-N until
+    end of turn"), discard, graveyard creature retrieval ("return a creature
+    card from your graveyard to your hand"), and often has power boosting
+    ("CARDNAME gets +N/+0 until end of turn), card drawing for life, or
+    damage/life loss to a creature or player oftentimes where you gain life
+    as a result.</p>
+
+  <p><b>Red &mdash;</b> Red always has direct damage (on numerous spells, some
+    hitting players, some creatures and some both), power boosting, panic
+    effects ("target creature cannot block"), and sometimes haste granting
+    and land destruction.</p>
+
+  <p><b>Green &mdash;</b> Green always has power/toughness boosting, land
+    searching, artifact/enchantment removal, and often mana production, life
+    gain, fog ("prevent all combat damage"), and flying destruction.</p>
+
+  <p>Note that whatever doesn't show up in common can show up in uncommon to still have a presence in
+    Limited.</p>
+
+  <p>With all this in mind, let's take another swipe at the skeleton:</p>
+
+  <pre> CW01 &mdash; creature, small 
+ CW02 &mdash; creature, small, flying, gravetwist 
+ CW03 &mdash; creature, small, first strike 
+ CW04 &mdash; creature, small, flash, ETB &mdash; life gain 
+ CW05 &mdash; creature, medium, vigilance 
+ CW06 &mdash; creature, medium, flying 
+ CW07 &mdash; sorcery &mdash; token making, flying 
+ CW08 &mdash; instant, power boost 
+ CW09 &mdash; instant, enchantment removal 
+ CW10 &mdash; enchantment, creature removal 
+ CU01 &mdash; creature, small, flying, 
+ CU02 &mdash; creature, small, shroud 
+ CU03 &mdash; creature, medium, flying 
+ CU04 &mdash; creature, large 
+ CU05 &mdash; instant, hard counterspell, gravetwist 
+ CU06 &mdash; instant, soft counterspell 
+ CU07 &mdash; instant, "bounce" 
+ CU08 &mdash; sorcery, card drawing 
+ CU09 &mdash; sorcery 
+ CU10 &mdash; enchantment, aura, creature removal 
+ CB01 &mdash; creature, small 
+ CB02 &mdash; creature, small, flying 
+ CB03 &mdash; creature, small, deathtouch, gravetwist 
+ CB04 &mdash; creature, medium, intimidate 
+ CB05 &mdash; creature, medium, ETB &mdash; raise dead 
+ CB06 &mdash; creature, medium 
+ CB07 &mdash; instant, creature kill, gravetwist 
+ CB08 &mdash; sorcery, discard 
+ CB09 &mdash; sorcery, drain creature 
+ CB10 &mdash; enchantment, aura, positive effect, gravetwist 
+ CR01 &mdash; creature, small &mdash; ETB direct damage to player 
+ CR02 &mdash; creature, small, first strike 
+ CR03 &mdash; creature, small 
+ CR04 &mdash; creature, medium, haste 
+ CR05 &mdash; creature, medium, trample 
+ CR06 &mdash; instant &mdash; direct damage to creatures 
+ CR07 &mdash; instant &mdash; direct damage to either 
+ CR08 &mdash; instant &mdash; power pump 
+ CR09 &mdash; sorcery &mdash; panic, gravetwist 
+ CR10 &mdash; enchantment, aura, positive effect 
+ CG01 &mdash; creature, small, gravetiwst, ETB &mdash; artifact/enchantment removal 
+ CG02 &mdash; creature, small, regeneration 
+ CG03 &mdash; creature, small, deathtouch 
+ CG04 &mdash; creature, medium, reach, gravetwist 
+ CG05 &mdash; creature, medium 
+ CG06 &mdash; creature, medium 
+ CG07 &mdash; creature, large, trample 
+ CG08 &mdash; instant, power/toughness boost 
+ CG09 &mdash; sorcery, life gain 
+ CG10 &mdash; enchantment, aura, positive effect 
+ CA01 &mdash; creature, medium 
+ CA02 &mdash; sac effect, mana related 
+ CA03 &mdash; tap ability, mana related 
+ CA04 &mdash; equipment, power/toughness pumping 
+ CA05 &mdash; equipment, evasion 
+ CL01 &mdash; produces W 
+ CL02 &mdash; produces U 
+ CL03 &mdash; produces B 
+ CL04 &mdash; produces R 
+ CL05 &mdash; produces G</pre>
+
+
+
+  <p>Putting in all the keywords starts to make me realize where I'm
+    getting squeezed for effects. I can solve some of those problems by
+    using creature slots. I can use an enter the battlefield (ETB) trigger,
+    for example, to mimic a sorcery. The skeleton also forced me to start
+    thinking about things like how much gravetwist do I want and in what
+    colors? In addition, I get to start examining if it's flavored
+    differently in different colors. Notice how it's heavier in black and
+    green, the two graveyard colors. I also made white and green put the
+    ability on creatures while blue and red used it only on instants and
+    sorceries.</p>
+
+  <p>How many passes a designer does on a particular skeleton has a lot to
+    do with the needs of the individual set. What I have above might be
+    enough or might require a few more passes if there are other issues that
+    need to be addressed. What you can tell from just the sample skeleton
+    that I have posted is that the most common design issue is having too
+    much to fit in, rather than too little.</p>
+
+  <p>It's important to remember that the skeleton is a flexible, living,
+    breathing document. The reason you make it is to give you a sense of
+    where things are in the moment. As cards start going in, you will begin
+    to see where ideas you had won't work and that will force you to
+    reconfigure the skeleton. In the end, the design skeleton is a tool that
+    better allows the designers to get a big picture of all the moving
+    parts to their set allowing them to start figuring out what their set is
+    going to need design-wise.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+</body>
+
+</html>
